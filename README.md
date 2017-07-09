@@ -1,4 +1,7 @@
 ##Quickstart
+
+[Install Docker](https://store.docker.com/editions/community/docker-ce-desktop-windows
+) and run:
  ```
  git clone https://github.com/barnwell/docker-bedrock-template.git myapp
  
@@ -12,8 +15,7 @@
  
  docker-compose up -d
 ```
-Application will be visible at localhost:8000
-
+The application will be visible at localhost:8000
 
 #### MySQL
 ```
@@ -24,6 +26,10 @@ MYSQL_DATABASE=database
 External Port: 13306
 phpMyAdmin: localhost:8001
 ```
+
+
+
+# Introduction
 
 This is an easy customizable docker boilerplate for any PHP-based projects like _Symfony Framework_, _CakePHP_, _Yii_ and many other frameworks or applications.
 
@@ -63,22 +69,3 @@ You can use my [Vagrant Development VM](https://github.com/mblaschke/vagrant-dev
 - [Container detail info](/documentation/DOCKER-INFO.md)
 - [Troubleshooting](/documentation/TROUBLESHOOTING.md)
 - [Changelog](/CHANGELOG.md)
-
-## Credits
-
-This Docker layout is based on https://github.com/denderello/symfony-docker-example/
-
-Thanks for your support, ideas and issues.
-- [Ingo Pfennigstorf](https://github.com/ipf)
-- [Florian Tatzel](https://github.com/PanadeEdu)
-- [Josef Florian Glatz](https://github.com/jousch)
-- [Ingo Müller](https://github.com/IngoMueller)
-- [Benjamin Rau](https://twitter.com/benjamin_rau)
-- [Philipp Kitzberger](https://github.com/Kitzberger)
-- [Stephan Ferraro](https://github.com/ferraro)
-- [Cedric Ziel](https://github.com/cedricziel)
-- [Elmar Hinz](https://github.com/elmar-hinz)
- 
-Thanks to [cron IT GmbH](http://www.cron.eu/) for inspiration.
-
-Did I forget anyone? Send me a tweet or create pull request!
