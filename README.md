@@ -1,7 +1,6 @@
-##Quickstart
+## Quick Start
 
-[Install Docker](https://store.docker.com/editions/community/docker-ce-desktop-windows
-) and run:
+[Install Docker](https://www.docker.com/community-edition#download) and run:
  ```
  git clone https://github.com/barnwell/docker-bedrock-template.git myapp
  
