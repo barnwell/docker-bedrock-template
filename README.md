@@ -78,8 +78,7 @@ Thanks for your support, ideas and issues.
 - [Stephan Ferraro](https://github.com/ferraro)
 - [Cedric Ziel](https://github.com/cedricziel)
 - [Elmar Hinz](https://github.com/elmar-hinz)
-
-
+ 
 Thanks to [cron IT GmbH](http://www.cron.eu/) for inspiration.
 
 Did I forget anyone? Send me a tweet or create pull request!
