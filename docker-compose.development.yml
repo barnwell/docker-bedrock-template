@@ -62,6 +62,24 @@ services:
       - etc/environment.yml
       - etc/environment.development.yml
 
+
+  #######################################
+  # phpMyAdmin
+  #######################################
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    links:
+      - mysql
+    environment:
+      - PMA_HOSTS=mysql
+      - VIRTUAL_HOST=pma.boilerplate.docker
+      - VIRTUAL_PORT=80
+    ports:
+      - "8001:80"
+    volumes:
+      - ./volumes/sessions/:/sessions/
+
+
   #######################################
   # PostgreSQL server
   #######################################
@@ -177,19 +195,6 @@ services:
   #    - etc/environment.yml
   #    - etc/environment.development.yml
 
-  #######################################
-  # phpMyAdmin
-  #######################################
-  #phpmyadmin:
-  #  image: phpmyadmin/phpmyadmin
-  #  links:
-  #    - mysql
-  #  environment:
-  #    - PMA_HOSTS=mysql
-  #    - VIRTUAL_HOST=pma.boilerplate.docker
-  #    - VIRTUAL_PORT=80
-  #  volumes:
-  #    - /sessions
 
   #######################################
   # Storage
