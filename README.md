@@ -1,5 +1,31 @@
-[![latest v5.2.0-beta3](https://img.shields.io/badge/latest-v5.2.0_beta3-green.svg?style=flat)](https://github.com/webdevops/php-docker-boilerplate/releases/tag/5.2.0-beta3)
-![License MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)
+##Quickstart
+
+ ```
+ git clone https://github.com/barnwell/docker-bedrock-template.git myapp
+ 
+ cd myapp
+ cp docker-compose.development.yml docker-compose.yml
+ 
+ cd app
+ composer install
+ 
+ cd ../
+ 
+ docker-compose up -d
+```
+
+Application will be visible at localhost:8000
+
+#### MySQL
+```
+MYSQL_ROOT_PASSWORD=dev
+MYSQL_USER=dev
+MYSQL_PASSWORD=dev
+MYSQL_DATABASE=database
+External Port: 13306
+phpMyAdmin: localhost:8001
+```
+
 
 This is an easy customizable docker boilerplate for any PHP-based projects like _Symfony Framework_, _CakePHP_, _Yii_ and many other frameworks or applications.
 
