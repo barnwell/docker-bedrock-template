@@ -12,8 +12,8 @@
  
  docker-compose up -d
 ```
-
 Application will be visible at localhost:8000
+
 
 #### MySQL
 ```
