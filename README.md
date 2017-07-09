@@ -1,5 +1,4 @@
 ##Quickstart
-
  ```
  git clone https://github.com/barnwell/docker-bedrock-template.git myapp
  
