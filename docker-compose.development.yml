@@ -8,7 +8,7 @@ services:
       context: .
       dockerfile: Dockerfile.development
     links:
-      - mail
+      #- mail
       - mysql
       #- postgres
       #- solr
@@ -23,8 +23,8 @@ services:
     volumes:
       - ./app/:/app/
       - ./:/docker/
-    volumes_from:
-      - storage
+#    volumes_from:
+#      - storage
     # cap and privileged needed for slowlog
     cap_add:
       - SYS_PTRACE
@@ -35,7 +35,7 @@ services:
     environment:
       - VIRTUAL_HOST=.app.boilerplate.docker
       - VIRTUAL_PORT=80
-      - POSTFIX_RELAYHOST=[mail]:1025
+#      - POSTFIX_RELAYHOST=[mail]:1025
 
 
   #######################################
@@ -54,8 +54,10 @@ services:
       #dockerfile: Percona-5.7.Dockerfile
     ports:
       - 13306:3306
-    volumes_from:
-      - storage
+#    volumes_from:
+#      - storage
+    volumes:
+      - ./volumes/mysql/:/var/lib/mysql/
     env_file:
       - etc/environment.yml
       - etc/environment.development.yml
@@ -138,13 +140,13 @@ services:
   # Mail
   #######################################
   # Mailhog
-  mail:
-     image: mailhog/mailhog
-   #  ports:
-   #    - 8025:8025
-     environment:
-      - VIRTUAL_HOST=mail.boilerplate.docker
-      - VIRTUAL_PORT=8025
+#  mail:
+#     image: mailhog/mailhog
+#   #  ports:
+#   #    - 8025:8025
+#     environment:
+#      - VIRTUAL_HOST=mail.boilerplate.docker
+#      - VIRTUAL_PORT=8025
 
   # Mailcatcher
   #mail:
@@ -192,8 +194,8 @@ services:
   #######################################
   # Storage
   #######################################
-  storage:
-    build:
-      context: docker/storage/
-    volumes:
-      - /storage
+#  storage:
+#    build:
+#      context: docker/storage/
+#    volumes:
+#      - /storage
