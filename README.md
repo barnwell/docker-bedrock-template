@@ -26,7 +26,6 @@ External Port: 13306
 phpMyAdmin: localhost:8001
 ```
 
-
 This is an easy customizable docker boilerplate for any PHP-based projects like _Symfony Framework_, _CakePHP_, _Yii_ and many other frameworks or applications.
 
 Supports:
